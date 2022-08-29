@@ -1,4 +1,5 @@
 from datetime import datetime
+from typing import Optional
 from pydantic import BaseModel, EmailStr, constr
 
 
@@ -6,9 +7,9 @@ class UserBaseSchema(BaseModel):
     name: str
     email: str
     photo: str
-    role: str | None = None
-    created_at: datetime | None = None
-    updated_at: datetime | None = None
+    role: Optional[str] = None
+    created_at: Optional[datetime] = None
+    updated_at: Optional[datetime] = None
 
     class Config:
         orm_mode = True
