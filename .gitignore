@@ -1,5 +1,3 @@
 __pycache__
 api_test/venv/
 api_test/.env
-jwt_test.py
-main.py
